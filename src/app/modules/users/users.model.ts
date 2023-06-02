@@ -4,7 +4,7 @@ type UserModel = Model<IUser, object>
 
 const userSchema = new Schema<IUser>(
   {
-    Id: {
+    id: {
       type: String,
       required: true,
       unique: true,
@@ -13,7 +13,7 @@ const userSchema = new Schema<IUser>(
       type: String,
       required: true,
     },
-    Password: {
+    password: {
       type: String,
       required: true,
     },
