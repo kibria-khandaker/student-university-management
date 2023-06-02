@@ -1,19 +1,23 @@
 import express, { Application, Request, Response } from 'express'
-import cors from 'cors';
-const app: Application = express();
-const port = 3000
+import cors from 'cors'
+const app: Application = express()
 
-app.use(cors());
+import usersService from './app/modules/users/users.service'
+
+app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-app.get('/', (req: Request, res: Response) => {
-    res.send('Hello I am SUM Application!')
-});
+app.get('/', async (req: Request, res: Response) => {
+  await usersService.createUser({
+    id: '999',
+    password: '12345',
+    role: 'student',
+  })
+  res.send('Hello Started SUM Application!')
+})
 
-export default app;
-
-
+export default app
 
 // st_university_management
 // 5j9xYPXDpcTT2v5b
