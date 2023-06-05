@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\My-Learning-Folder\\P-Hero-Lavel-2\\student-university-management\\logs\\winston\\success\\.7e42d60eafe77d08109adb79cd3dd4fba84515af-audit.json",
+    "files": [
+        {
+            "date": 1685909007703,
+            "name": "D:\\My-Learning-Folder\\P-Hero-Lavel-2\\student-university-management\\logs\\winston\\success\\success-2023-05-06-02.log",
+            "hash": "fad5c65064c7935355697665cbde9216172e8ecb894b8408336f8718772cee00"
+        },
+        {
+            "date": 1685913120852,
+            "name": "D:\\My-Learning-Folder\\P-Hero-Lavel-2\\student-university-management\\logs\\winston\\success\\success-2023-05-06-03.log",
+            "hash": "39b6f3e644679165dcc393bb07d7cabc318276ad523b1ba2b62809484e813276"
+        }
+    ],
+    "hashType": "sha256"
+}

@@ -8,10 +8,11 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-// Application route
+// Application route ----------
+// console.log(app.get('env'));
+// console.log(process.env);
 app.use('/api/v1/users', usersRouter)
 
-// Testing route or default route
 app.get('/', async (req: Request, res: Response) => {
   res.send('Hello Started SUM Application!')
 })
