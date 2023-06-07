@@ -1,7 +1,7 @@
 import cors from 'cors'
 import express, { Application } from 'express'
 import globalErrorHandler from './app/middlewares/globalErrorHandler'
-import { UserRouter } from './app/modules/user/user.route'
+import routes from './app/routes'
 // import ApiError from './errors/ApiError'
 
 const app: Application = express()
@@ -14,7 +14,10 @@ app.use(express.urlencoded({ extended: true }))
 // Application route ----------
 // console.log(app.get('env'));
 // console.log(process.env);
-app.use('/api/v1/users', UserRouter)
+
+// app.use('/api/v1/users', UserRouter)
+// app.use('/api/v1/academic-semester', AcSemesterRouter)
+app.use('/api/v1', routes)
 
 // // Testing route or default route
 // app.get('/', (req: Request, res: Response, next: NextFunction) => {
