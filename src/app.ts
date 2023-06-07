@@ -2,6 +2,7 @@ import cors from 'cors'
 import express, { Application } from 'express'
 import globalErrorHandler from './app/middlewares/globalErrorHandler'
 import { UserRouter } from './app/modules/user/user.route'
+import { AcSemesterRouter } from './app/modules/academicSemester/acSemester.route'
 // import ApiError from './errors/ApiError'
 
 const app: Application = express()
@@ -14,7 +15,9 @@ app.use(express.urlencoded({ extended: true }))
 // Application route ----------
 // console.log(app.get('env'));
 // console.log(process.env);
+
 app.use('/api/v1/users', UserRouter)
+app.use('/api/v1/academic-semester', AcSemesterRouter)
 
 // // Testing route or default route
 // app.get('/', (req: Request, res: Response, next: NextFunction) => {
