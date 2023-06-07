@@ -1,0 +1,45 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\My-Learning-Folder\\P-Hero-Lavel-2\\student-university-management\\logs\\winston\\errors\\.02e9e2ad0ccd24b815ff588df4a172e03793ce9f-audit.json",
+    "files": [
+        {
+            "date": 1686034797564,
+            "name": "D:\\My-Learning-Folder\\P-Hero-Lavel-2\\student-university-management\\logs\\winston\\errors\\error.log.2023-06-06-12",
+            "hash": "1a6be0c42e62db048291566019c6ac8bec85c1ad5fc6c854680f0ffa827cd9e6"
+        },
+        {
+            "date": 1686034901500,
+            "name": "D:\\My-Learning-Folder\\P-Hero-Lavel-2\\student-university-management\\logs\\winston\\errors\\error.log.2023-06-06-13",
+            "hash": "907010137c67c6b64aa5f275993a3d0adc0870df91727fd7c593e36f0558adee"
+        },
+        {
+            "date": 1686039463335,
+            "name": "D:\\My-Learning-Folder\\P-Hero-Lavel-2\\student-university-management\\logs\\winston\\errors\\error.log.2023-06-06-14",
+            "hash": "18b44922c874f69f6a2efdeee3555bfeb1304d5dd4fef61fa8c1725a6b851f23"
+        },
+        {
+            "date": 1686042033889,
+            "name": "D:\\My-Learning-Folder\\P-Hero-Lavel-2\\student-university-management\\logs\\winston\\errors\\error.log.2023-06-06-15",
+            "hash": "97656d994ea476ff261f094c2d448d68a937b71d8bddf9281de43d07150009dc"
+        },
+        {
+            "date": 1686085217501,
+            "name": "D:\\My-Learning-Folder\\P-Hero-Lavel-2\\student-university-management\\logs\\winston\\errors\\error.log.2023-07-06-03",
+            "hash": "a05dc0adf043ca29b16d39ef3b6303eec9ba33ab523eead31d78ac94b1738d74"
+        },
+        {
+            "date": 1686120234148,
+            "name": "D:\\My-Learning-Folder\\P-Hero-Lavel-2\\student-university-management\\logs\\winston\\errors\\error.log.2023-07-06-12",
+            "hash": "e68b35d85c78ea62eee539f448a6f16949ce7a14385fbc992ce66fc93bab9c18"
+        },
+        {
+            "date": 1686121335236,
+            "name": "D:\\My-Learning-Folder\\P-Hero-Lavel-2\\student-university-management\\logs\\winston\\errors\\error.log.2023-07-06-13",
+            "hash": "1e8960fbdd67a4638e3a65ad59859ff4123c44d1c3b4728ffdb600d7b12e7e60"
+        }
+    ],
+    "hashType": "sha256"
+}
