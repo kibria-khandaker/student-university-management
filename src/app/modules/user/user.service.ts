@@ -13,7 +13,9 @@ const createUser = async (user: IUser): Promise<IUser | null> => {
   if (!user.password) {
     user.password = config.default_user_pass as string
   }
+
   const createdUser = await User.create(user)
+
   if (!createUser) {
     // throw new Error('Failed to create User!')
     throw new ApiError(400, 'Failed to create User! -Service.ts-')
