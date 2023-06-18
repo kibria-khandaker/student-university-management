@@ -1,9 +1,10 @@
 import cors from 'cors'
-import express, { Application } from 'express'
+import express, { Application, NextFunction, Request, Response } from 'express'
 import globalErrorHandler from './app/middlewares/globalErrorHandler'
 // import { UserRouter } from './app/modules/user/user.route'
 // import { AcSemesterRouter } from './app/modules/academicSemester/acSemester.route'
 import routers from './app/routes'
+import httpStatus from 'http-status'
 // import ApiError from './errors/ApiError'
 
 const app: Application = express()
@@ -36,5 +37,20 @@ app.use(globalErrorHandler)
 // app.get('/', async (req: Request, res: Response) => {
 //   res.send('Hello Started SUM Application!')
 // })
+
+// Handle Not found route
+app.use((req: Request, res: Response, next: NextFunction) => {
+  res.status(httpStatus.NOT_FOUND).json({
+    success: false,
+    message: 'Not Found',
+    errorMessages: [
+      {
+        path: req.originalUrl,
+        message: 'Api Not Found',
+      },
+    ],
+  })
+  next()
+})
 
 export default app
