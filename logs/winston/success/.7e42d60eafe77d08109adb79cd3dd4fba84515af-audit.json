@@ -1,0 +1,40 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\My-Learning-Folder\\P-Hero-Lavel-2\\student-university-management\\logs\\winston\\success\\.7e42d60eafe77d08109adb79cd3dd4fba84515af-audit.json",
+    "files": [
+        {
+            "date": 1686810175378,
+            "name": "D:\\My-Learning-Folder\\P-Hero-Lavel-2\\student-university-management\\logs\\winston\\success\\success-2023-15-06-12.log",
+            "hash": "3c8f26efbf567000cdd10bfdf06aaeb0d2350c33058989db20a6b35f771abebd"
+        },
+        {
+            "date": 1686812672495,
+            "name": "D:\\My-Learning-Folder\\P-Hero-Lavel-2\\student-university-management\\logs\\winston\\success\\success-2023-15-06-13.log",
+            "hash": "14d65834868463836f0f01bbd3627d52410762e3e6c194b2de4210fa0ace517f"
+        },
+        {
+            "date": 1686816068161,
+            "name": "D:\\My-Learning-Folder\\P-Hero-Lavel-2\\student-university-management\\logs\\winston\\success\\success-2023-15-06-14.log",
+            "hash": "9ec3dbbbe39285026f5732b3faf36c350c4ac1653947cbca6e1537ab772a1388"
+        },
+        {
+            "date": 1687090587770,
+            "name": "D:\\My-Learning-Folder\\P-Hero-Lavel-2\\student-university-management\\logs\\winston\\success\\success-2023-18-06-18.log",
+            "hash": "a8908f1f5522c32cfbe9e55bcab5478f6fd548537b06ad2a9c90e06364700412"
+        },
+        {
+            "date": 1687093560376,
+            "name": "D:\\My-Learning-Folder\\P-Hero-Lavel-2\\student-university-management\\logs\\winston\\success\\success-2023-18-06-19.log",
+            "hash": "40e53bbb5e2a1a2903b5c9510b09bb43f8d9dc41e8de1c4543d6a730f8814feb"
+        },
+        {
+            "date": 1687096966873,
+            "name": "D:\\My-Learning-Folder\\P-Hero-Lavel-2\\student-university-management\\logs\\winston\\success\\success-2023-18-06-20.log",
+            "hash": "b351f7e65b5fc59be7ed52781c332a90fbf38b6ca562b48042493e6e5614c7f7"
+        }
+    ],
+    "hashType": "sha256"
+}
