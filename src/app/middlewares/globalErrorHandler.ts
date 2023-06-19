@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable no-unused-vars */
 import { ErrorRequestHandler, NextFunction, Request, Response } from 'express'
 import config from '../../config'
 import ApiError from '../../errors/ApiError'
@@ -66,6 +68,5 @@ const globalErrorHandler: ErrorRequestHandler = (
     errorMessages,
     stack: config.env !== 'production' ? error?.stack : undefined,
   })
-  next()
 }
 export default globalErrorHandler

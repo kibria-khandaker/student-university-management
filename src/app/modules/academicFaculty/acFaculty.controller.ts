@@ -39,8 +39,8 @@ const getAllFaculties = catchAsync(async (req: Request, res: Response) => {
 })
 
 const getSingleFaculty = catchAsync(async (req: Request, res: Response) => {
-  const id = req.params
-  // const id = req.params.id
+  // const id = req.params
+  const id = req.params.id
 
   const result = await AcFacultyService.getSingleFaculty(id)
 
