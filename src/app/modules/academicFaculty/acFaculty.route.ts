@@ -5,7 +5,10 @@ import { AcFacultyController } from './acFaculty.controller'
 // Faculty Faculties Facultys
 const router = express.Router()
 
-router.post('/', validateRequest(AcFacultyValidation.createAcFacultyZodSchema))
+router.post(
+  '/create-faculty',
+  validateRequest(AcFacultyValidation.createAcFacultyZodSchema)
+)
 
 router.get('/:id', AcFacultyController.getSingleFaculty)
 

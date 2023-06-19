@@ -37,6 +37,9 @@ const AcSemesterSchema = new Schema<IAcSemester>(
   },
   {
     timestamps: true,
+    toJSON: {
+      virtuals: true,
+    },
   }
 )
 
