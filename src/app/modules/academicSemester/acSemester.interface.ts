@@ -19,10 +19,14 @@ export type IAcSemesterMonth =
 
 export type IAcSemester = {
   title: IAcSemesterTitles
-  year: number
+  year: string
   code: IAcSemesterCodes
   startMonth: IAcSemesterMonth
   endMonth: IAcSemesterMonth
 }
 
 export type AcSemesterModel = Model<IAcSemester>
+
+export type IAcSemesterFilter = {
+  searchTerm?: string
+}

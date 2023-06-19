@@ -16,7 +16,7 @@ const AcSemesterSchema = new Schema<IAcSemester>(
       enum: acSemesterTitles,
     },
     year: {
-      type: Number,
+      type: String,
       required: true,
     },
     code: {
