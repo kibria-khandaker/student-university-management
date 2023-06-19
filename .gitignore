@@ -3,12 +3,13 @@
 # dependencies 
 node_modules
 /node_modules
-/logs
-logs
 .env
 /.pnp
 .pnp.js
 
+# errors and success history of log from winston
+/logs
+logs
 
 # testing
 /coverage
