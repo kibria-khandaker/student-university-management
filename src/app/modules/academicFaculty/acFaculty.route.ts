@@ -6,8 +6,9 @@ import { AcFacultyController } from './acFaculty.controller'
 const router = express.Router()
 
 router.post(
-  '/create-faculty',
-  validateRequest(AcFacultyValidation.createAcFacultyZodSchema)
+  '/create-faculty/',
+  validateRequest(AcFacultyValidation.createAcFacultyZodSchema),
+  AcFacultyController.createFaculty
 )
 
 router.get('/:id', AcFacultyController.getSingleFaculty)

@@ -5,6 +5,8 @@ import globalErrorHandler from './app/middlewares/globalErrorHandler'
 // import { AcSemesterRouter } from './app/modules/academicSemester/acSemester.route'
 import routers from './app/routes'
 import httpStatus from 'http-status'
+// import { generateFacultyId } from './app/modules/user/user.utils'
+// import { generateStudentId } from './app/modules/user/user.utils'
 // import ApiError from './errors/ApiError'
 
 const app: Application = express()
@@ -52,5 +54,18 @@ app.use((req: Request, res: Response, next: NextFunction) => {
   })
   next()
 })
+
+//--------- test creat St Id api
+// const acSemester = {
+//   code: '01',
+//   year: '2025',
+// }
+// const testId = async () => {
+//   // const testId = await generateStudentId(acSemester)
+//   const testId = await generateFacultyId()
+//   console.log(testId)
+// }
+// testId()
+//---------
 
 export default app
