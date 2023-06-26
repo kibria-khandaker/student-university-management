@@ -11,6 +11,7 @@ import { AcFacultyService } from './acFaculty.service'
 
 const createFaculty = catchAsync(async (req: Request, res: Response) => {
   const { ...acFacultyData } = req.body
+
   const result = await AcFacultyService.createFaculty(acFacultyData)
   sendResponse<IAcFaculty>(res, {
     statusCode: httpStatus.OK,

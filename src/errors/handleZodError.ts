@@ -21,5 +21,3 @@ const handleZodError = (error: ZodError): iGenericErrorResponse => {
   }
 }
 export default handleZodError
-
-// 6.57
