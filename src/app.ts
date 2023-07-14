@@ -1,6 +1,7 @@
 import cors from 'cors'
 import express, { Application, NextFunction, Request, Response } from 'express'
 import globalErrorHandler from './app/middlewares/globalErrorHandler'
+import cookieParser from 'cookie-parser'
 // import { UserRouter } from './app/modules/user/user.route'
 // import { AcSemesterRouter } from './app/modules/academicSemester/acSemester.route'
 import routers from './app/routes'
@@ -12,6 +13,7 @@ import httpStatus from 'http-status'
 const app: Application = express()
 
 app.use(cors())
+app.use(cookieParser())
 // parser
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))

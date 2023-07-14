@@ -8,6 +8,7 @@ import { FacultyRoutes } from '../modules/faculty/faculty.route'
 import { UserRouter } from '../modules/user/user.route'
 import { StudentRoutes } from '../modules/student/student.route'
 import { ManagementDepartmentRoute } from '../modules/managementDepartment/managementDepartment.route'
+import { AuthRoutes } from '../modules/auth/auth.route'
 
 const router = express.Router()
 // router.use('/users', UserRouter)
@@ -44,6 +45,10 @@ const moduleRoutes = [
   {
     path: '/users',
     route: UserRouter,
+  },
+  {
+    path: '/auth',
+    route: AuthRoutes,
   },
 ]
 

@@ -29,6 +29,7 @@ const createStudent = async (
   student: IStudent,
   user: IUser
 ): Promise<IUser | null> => {
+  // default password
   if (!user.password) {
     user.password = config.default_student_pass as string
   }
@@ -36,7 +37,9 @@ const createStudent = async (
   // set role
   user.role = 'student'
 
-  const academicsemester = await AcSemester.findById(student.academicSemester)
+  const academicsemester = await AcSemester.findById(
+    student.academicSemester
+  ).lean()
 
   // generate student id
   let newUserAllData = null
@@ -102,6 +105,7 @@ const createFaculty = async (
   if (!user.password) {
     user.password = config.default_faculty_pass as string
   }
+
   // set role
   user.role = 'faculty'
 
@@ -162,6 +166,7 @@ const createAdmin = async (
   if (!user.password) {
     user.password = config.default_admin_pass as string
   }
+
   // set role
   user.role = 'admin'
 
